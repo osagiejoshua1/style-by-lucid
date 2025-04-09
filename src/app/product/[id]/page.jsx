@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import useCartStore from "../../components/store/useCartStore";
-import Navbar from "@/app/components/Navbar";
+import Navbar from "@/components/Navbar"
 import { Loader2 } from "lucide-react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

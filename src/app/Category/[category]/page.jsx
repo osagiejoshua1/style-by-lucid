@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 import { RiEyeLine, RiShoppingCartLine, RiLoader5Line } from "react-icons/ri";
 import { toast } from "react-toastify";
 import Link from "next/link";
-import Navbar from "@/app/components/Navbar";
-import { formatPrice } from "@/app/utils/formatPrice";
-import useCartStore from "@/app/components/store/useCartStore";
+import Navbar from "@/components/Navbar";
+import { formatPrice } from "@/utils/formatPrice";
+import useCartStore from "@/components/store/useCartStore";
 import { Loader2 } from "lucide-react";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;

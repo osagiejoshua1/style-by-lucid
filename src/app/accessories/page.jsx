@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Navbar from "@/app/components/Navbar";
-import AccessoryCard from "@/app/components/AccessoryCard"; // ✅ import your new card component
+import Navbar from "@/components/Navbar";
+import AccessoryCard from "@/components/AccessoryCard";
 import { toast } from "react-toastify";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;

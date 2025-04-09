@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import useCartStore from "@/app/components/store/useCartStore";
+import useCartStore from "@/components/store/useCartStore";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { CheckCircle2, Loader2, XCircle } from "lucide-react";
