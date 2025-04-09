@@ -633,6 +633,10 @@ export default function Home() {
   )}
 </AnimatePresence>
 <Footer/>
+
+<div className="bg-green-500 text-4xl">
+  HELLO
+</div>
     </>
   );
 }
