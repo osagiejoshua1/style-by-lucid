@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,14 +14,14 @@ export default {
         'primary-dark': '#050505',
       },
       boxShadow: {
-        'soft': '0 8px 32px rgba(0,0,0,0.05)',
-      }
+        soft: '0 8px 32px rgba(0,0,0,0.05)',
+      },
     },
     screens: {
-      "sm": "640px",
-      "md": "768px",
-      "lg": "1024px",
-      "xl": "1280px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
       "2xl": "1536px",
     },
   },
