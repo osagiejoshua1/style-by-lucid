@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}", // Covers all files in src
+    "./app/**/*.{js,ts,jsx,tsx,mdx}", // Essential for Next.js 15 App Router
+    "./components/**/*.{js,ts,jsx,tsx,mdx}", // If you have separate components dir
   ],
   theme: {
     extend: {
@@ -26,4 +26,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}
