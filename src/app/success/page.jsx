@@ -3,7 +3,7 @@
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 
-const Success = dynamic(() => import("../../components/Success"), {
+const Success = dynamic(() => import("../components/Success"), {
   ssr: false,
 });
 
