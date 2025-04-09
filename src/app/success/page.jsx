@@ -1,14 +1,15 @@
-import dynamic from "next/dynamic";
-import { Suspense } from "react";
+"use client";
 
-// Dynamically import the Success component (client-only)
+import { Suspense } from "react";
+import dynamic from "next/dynamic";
+
 const Success = dynamic(() => import("../../components/Success"), {
   ssr: false,
 });
 
 export default function Page() {
   return (
-    <Suspense fallback={<div>Loading Success page...</div>}>
+    <Suspense fallback={<div>Loading...</div>}>
       <Success />
     </Suspense>
   );

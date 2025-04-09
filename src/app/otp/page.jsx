@@ -1,15 +1,12 @@
-import dynamic from "next/dynamic";
-import { Suspense } from "react";
+"use client";
 
-// Dynamically import the OTP component (client-only)
+import dynamic from "next/dynamic";
+
+// ✅ Dynamically import the client-only OTPVerification component
 const OTPVerification = dynamic(() => import("../../components/OTPVerification"), {
-  ssr: false,
+  ssr: false, // Important to prevent server-side rendering issues
 });
 
 export default function Page() {
-  return (
-    <Suspense fallback={<div>Loading OTP page...</div>}>
-      <OTPVerification />
-    </Suspense>
-  );
+  return <OTPVerification />;
 }
